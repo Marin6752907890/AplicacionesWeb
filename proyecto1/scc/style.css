@@ -1,0 +1,26 @@
+body{
+    
+}
+body{
+    background-color: black;
+    background-image: url("../img/la1.jpeg");
+    /* 2. Evita que la imagen se duplique */
+    background-repeat: no-no-repeat; 
+            
+    /* 3. Centra la imagen horizontal y verticalmente */
+     background-position: center center; 
+      
+    /* 4. Hace que el fondo se quede fijo al bajar */
+     background-attachment: fixed; 
+            
+     /* 5. Opcional: Ajusta la imagen para que cubra toda la pantalla */
+     background-size: cover; 
+}
+h1{
+    text-align:center;
+    color: white;
+}
+h2{
+    text-align:center;
+    color: white;
+}

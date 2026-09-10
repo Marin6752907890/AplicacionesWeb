@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+    <!--esto es el cuerpo de el codigo la cabeza y el cuerpo aqui en title va el nombre el utf-8
+    es lo que po e un acepto o la ene-->
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Mi primera paractica</title>
+    <link rel='stylesheet' href='style.css'>
+    <meta name="description" content="Es una descripcion corta del objetivo de tu pagina ">
+    <meta name="author" content="MARIN">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="img/icon.png" type="image/png" rel="icon">
+
+    <link href="img/icon.ico" type="image/x-icon" rel="icon">
+
+    <link href="img/icon.svg" type="image/svg+xlm" rel="icon">
+    <style>
+    p{
+        font-size: 1.5rem;
+    }
+    h2{
+        color: rgb(69, 97, 239);
+        font-size: 3rem;
+    }
+</style>
+</head>
+<body>
+    <header> 
+        <h1>Encabezado</h1>
+        <h2>Subtitulo</h2>
+    </header>
+    <h2>Subtitulo</h2>
+    <p>Lorem ipsum<br> dolor, sit amet consectetur adipisicing elit. Ipsa excepturi 
+        atque <b>cumque ex modi eum</b> fuga quis <u>error mollitia facere odit</u> ab, illum, 
+        voluptatem sed, quaerat doloribus a illo dicta?
+    </p>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            <b>Quisquam,</b> <u>quod</u> <i>quidem</i> <mark>quasi</mark> <small>quibusdam</small> 
+            <del>quos</del> <ins>qui</ins> <sub>quam</sub> <sup>quam</sup>
+        </p>
+    </div>
+
+        <div class="container2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                <b>Quisquam,</b> <u>quod</u> <i>quidem</i> <mark>quasi</mark> <small>quibusdam</small> 
+                <del>quos</del> <ins>qui</ins> <sub>quam</sub> <sup>quam</sup>
+            </p>
+        </div>
+
+        <table>
+ <colgroup>
+ <col style="background-color:#f4f4f4">
+ </colgroup>
+ <thead>
+ <tr>
+ <th>Producto</th>
+ <th>Precio</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>Café</td>
+ <td>$35</td>
+ </tr>
+ <tr>
+ <td colspan="2">Celda que ocupa 2 columnas</td>
+ </tr>
+ </tbody>
+</table>
+<!-- No ordenada -->
+<ul>
+ <li>Elemento 1</li>
+ <li>Elemento 2</li>
+</ul>
+<!-- Ordenada -->
+<ol type="1" start="1">
+ <li>Primero</li>
+ <li>Segundo</li>
+</ol>
+<!-- De descripción/definición -->
+<dl>
+ <dt>HTML</dt>
+ <dd>Lenguaje de marcado para la estructura.</dd>
+</dl>
+<!-- Listas anidadas -->
+<ul>
+ <li>Frutas
+ <ul>
+ <li>Manzana</li>
+ <li>Plátano</li>
+ </ul>
+ </li>
+</ul>
+<div> class="tarjeta">
+ <p>Contenedor de bloque genérico, para agrupar y aplicar CSS/JS.</p>
+</div>
+<p>Texto normal con <span class="resaltado">una parte en línea marcada</span> para
+estilo.</p>
+<button type="button" onclick="alert('Hola')">Haz clic</button>
+<iframe src="https://ejemplo.com" width="600" height="400" title="Contenido
+embebido"></iframe>
+<!-- JavaScript interno -->
+<script>
+ console.log("Hola desde HTML");
+</script>
+<!-- JavaScript externo, mejor práctica, al final del body -->
+<script src="app.js"></script>
+<noscript>Tu navegador no soporta JavaScript.</noscript>
+
+    
+</body>
+</html>
