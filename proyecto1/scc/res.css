@@ -1,16 +1,152 @@
-body{
+body {
     background-color: black;
     background-image: url(../img/la1.jpeg);
-    background-repeat: no-no-repeat;
+    background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
+    margin: 0;
 }
-h1{
-    color: white;
-    text-align:center;
+/* Barra de arriba */
+.navbar {
+    background-color: black;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 45px;
 }
-h2{
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* LA FINCA */
+.nombre {
+    color: #F4EEE2;
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* CARNICERÍA */
+.tipo {
+    color: #C49A5A;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Menú */
+.menu {
+    display: flex;
+    gap: 38px;
+}
+
+/* Links */
+.menu a {
+    color: #B8B0A5;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+/* Cuando pasas el mouse */
+.menu a:hover {
+    color: #F4EEE2;
+}
+
+/* Inicio seleccionado */
+.menu a:first-child {
+    color: #C49A5A;
+}
+
+
+/* ========================================================
+   NUEVOS ESTILOS PARA LA SECCIÓN DE CARNES 
+   ======================================================== */
+
+.seccion-carnes {
+    padding: 60px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+        background-color: rgba(0, 0, 0, 0.75); 
+    min-height: calc(100vh - 190px);
+}
+
+/* Títulos principales */
+.header-seccion {
+    margin-bottom: 50px;
+}
+
+.header-seccion h1 {
+    color: white; /* Color crema de tu paleta */
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.header-seccion p {
+    color: white; /* Color gris suave de tu menú */
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+/* Contenedor Flexbox para alinear las tarjetas */
+.contenedor-productos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap; /* Hace que se adapte a celulares */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Tarjeta individual */
+.tarjeta-producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 220px;
+}
+
+/* Círculo de fondo para la carne */
+.imagen-wrapper {
+    background-color: white; /* Amarillo de la imagen original */
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* Suaviza la animación al pasar el mouse */
+}
+
+/* Efecto visual al pasar el mouse sobre el círculo */
+.tarjeta-producto:hover .imagen-wrapper {
+    transform: scale(1.05); /* Agranda un poco el círculo */
+}
+
+/* Ajuste de la foto de la carne dentro del círculo */
+.imagen-wrapper img {
+    width: 85%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Texto de los productos abajo del círculo */
+.nombre-producto {
     color: white;
-    text-align:center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 0;
+    text-transform: uppercase; /* Opcional: Hace que resalte más en mayúsculas */
 }

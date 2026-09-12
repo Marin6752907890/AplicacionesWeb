@@ -1,25 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Carniceria LA FINCA</title>
-     <link rel="stylesheet" href="../scc/cortes.css">
+    <link rel="stylesheet" href="../scc/cortes.css">
     <meta name="description" content="Es una descripcion corta del objetivo de tu pagina ">
     <meta name="author" content="MARIN">
-    </head>
-    <body>
-        <!--TItulo y subtitulo-->
-        <header>
-            <h1>LA FINCA</h1>
-            <h2>CARNICERIA</h2>
-        </header>
-    <!--BOTONES DEL MENU DE ARRIBA Y EL ANCLA DE ABAJO -->
-    <a href="practica.html">
-        <button>Inicio</button>
-    </a>
-    <a href="res.html">
-        <button>Carne res</button>
-    </a>
-    </body>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <span class="nombre">LA FINCA</span>
+            <span class="tipo">CARNICERÍA</span>
+        </div>
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="res.html">Carne de Res</a>
+            <a href="cortes.html">Cortes</a>
+        </nav>
+    </header>
+
+    <!-- SECCIÓN DE CORTES INTEGRADA -->
+    <section class="seccion-cortes">
+        <div class="header-seccion">
+            <h1>Nuestros Cortes Selectos</h1>
+            <p>Disfruta de la mejor selección de cortes premium marmoleados y listos para la parrilla.</p>
+        </div>
+
+        <div class="contenedor-productos">
+            <!-- Corte 1 -->
+            <div class="tarjeta-producto">
+                <div class="imagen-wrapper">
+                    <img src="../img/la6.jpeg" alt="Rib Eye">
+                </div>
+                <p class="nombre-producto">Rib Eye</p>
+            </div>
+
+            <!-- Corte 2 -->
+            <div class="tarjeta-producto">
+                <div class="imagen-wrapper">
+                    <img src="../img/la7.jpeg" alt="T-Bone">
+                </div>
+                <p class="nombre-producto">T-Bone</p>
+            </div>
+
+            <!-- Corte 3 -->
+            <div class="tarjeta-producto">
+                <div class="imagen-wrapper">
+                    <img src="../img/la8.jpeg" alt="Tomahawk">
+                </div>
+                <p class="nombre-producto">Tomahawk</p>
+            </div>
+
+            <!-- Corte 4 -->
+            <div class="tarjeta-producto">
+                <div class="imagen-wrapper">
+                    <img src="../img/la9.jpeg" alt="Picaña">
+                </div>
+                <p class="nombre-producto">Picaña</p>
+            </div>
+        </div>
+    </section>
+
+</body>
 </html>
